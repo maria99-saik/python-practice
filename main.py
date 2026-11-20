@@ -1,7 +1,9 @@
-def get_even_numbers(numbers):
-    even_numbers = []
-    for number in numbers:
-        if number % 2 == 0:
-            even_numbers.append(number)
-    return even_numbers
-print(get_even_numbers([1, 2, 3, 4, 5]))
+def filter_long_words(words, min_length):
+    new_list = []
+    for word in words:
+        if len(word) >= min_length:
+            new_list.append(word)
+    return new_list
+print (filter_long_words(["cat", "elephant", "dog", "tiger"], 5))
+
+
