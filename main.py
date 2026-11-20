@@ -1,7 +1,6 @@
-def duble_numbers(numbers):
-    new_numbers = []
-    for number in numbers:
-        new_numbers.append(int(number))
-    return new_numbers
-print(duble_numbers([1,2,3,4,5]))
-
+def compare_lists(list1, list2):
+    nuw_list = []
+    for i in range (len(list1)):
+        nuw_list.append(list1[i] == list2[i])
+    return nuw_list
+print(compare_lists([1, 2, 7], [1, 2, 3]))
