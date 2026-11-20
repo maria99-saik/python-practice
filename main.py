@@ -1,9 +1,7 @@
-def get_max_elements(list1, list2):
-    new_list = []
-    for i in range(len(list1)):
-        if list1[i] > list2[i]:
-            new_list.append(list1[i])
-        else:
-            new_list.append(list2[i])
-    return new_list
-print(get_max_elements([1, 10, 5], [4, 2, 5]))
+def get_even_numbers(numbers):
+    even_numbers = []
+    for number in numbers:
+        if number % 2 == 0:
+            even_numbers.append(number)
+    return even_numbers
+print(get_even_numbers([1, 2, 3, 4, 5]))
