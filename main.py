@@ -1,11 +1,13 @@
-def remove_vowels(document):
-    new_string = ""
-    vowels = "aeiouyAEIOUY"
-    for char in document:
-        if char not in vowels:
-            new_string += char
-    return new_string
-print(remove_vowels("Hello World!"))
+def count_vowels(text):
+    count = 0
+    vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+    for char in text:
+        if char in vowels:
+            count += 1
+    return count
+print (count_vowels("Hello World!"))
+
+
 
 
 
