@@ -1,9 +1,11 @@
-def filter_long_words(words, min_length):
-    new_list = []
-    for word in words:
-        if len(word) >= min_length:
-            new_list.append(word)
-    return new_list
-print (filter_long_words(["cat", "elephant", "dog", "tiger"], 5))
+def remove_vowels(document):
+    new_string = ""
+    vowels = "aeiouyAEIOUY"
+    for char in document:
+        if char not in vowels:
+            new_string += char
+    return new_string
+print(remove_vowels("Hello World!"))
+
 
 
